@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    background: #000;
+    color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    font-family: 'Sigmar One';
+}
+h2{
+    
+    font-size: large;
+}
+
+h1 {
+    font-family: 'Shadows Into Light';
+    font-size: 10rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ff66b2;
+    text-shadow: 0 0 20px rgba(255, 102, 178, 0.8), 0 0 30px rgba(255, 102, 178, 0.6);
+    animation: glow 1.5s infinite, slideIn 2s forwards;
+    opacity: 0;
+    margin-bottom: 2rem;
+}
+
+#button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    margin-bottom: 160px;
+  }
+
+@keyframes glow {
+    0% { text-shadow: 0 0 20px rgba(255, 102, 178, 0.8); }
+    50% { text-shadow: 0 0 30px rgba(255, 102, 178, 1), 0 0 50px rgba(255, 102, 178, 0.7); }
+    100% { text-shadow: 0 0 20px rgba(255, 102, 178, 0.8); }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+button {
+    font-family: 'Amatic SC';
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    background: #ff3385;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 20px rgba(255, 51, 133, 0.8);
+    animation: fadeIn 2s 1s forwards;
+    width: 170px;
+    margin: 20px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+button:hover {
+    background: #cc0099;
+    box-shadow: 0 0 30px rgba(255, 51, 133, 0.9);
+}
+
+@keyframes particles {
+    0% { transform: translateY(-100px); opacity: 1; }
+    100% { transform: translateY(100vh); opacity: 0; }
+}
+
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 102, 178, 0.6);
+    width: 10px;
+    height: 10px;
+    animation: particles 5s infinite;
+}
+
+.particle:nth-child(1) { top: 10%; left: 20%; animation-duration: 4s; }
+.particle:nth-child(2) { top: 30%; left: 50%; animation-duration: 6s; }
+.particle:nth-child(3) { top: 50%; left: 30%; animation-duration: 7s; }
+.particle:nth-child(4) { top: 70%; left: 70%; animation-duration: 5s; }
+.particle:nth-child(5) { top: 80%; left: 20%; animation-duration: 4s; }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/enter.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Log In or Sign Up:</h2>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#" id="signUpForm">
+                <h1>Sign Up</h1>
+                <span>fill in your information</span>
+                <input type="text" placeholder="Name" id="newusername"/>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" id="newpassword"/>
+                <small class="passwordRequirements">Password must be at least 8 characters long, contain at least one
+                    lowercase
+                    letter, one uppercase letter, and one number.</small>
+                <br>
+                <input type="submit" class="sb" value="Sign Up">
+                <p id="message2"></p>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#" id="logInForm">
+                <h1>Log in</h1>
+                <span>fill in your information</span>
+                <input type="text" placeholder="Name" id="username" />
+                <input type="password" placeholder="Password" id="userpassword" />
+                <input type="submit" class="sb" value="Log In">
+                <p id="message1"></p>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Log In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+    </footer>
+    <script src="js/enter.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Chewy);
+
+.App {
+  display: inline-flex;
+  /* text-align: center;
+  height: 100%; */
+
+  
+
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+  background: #000;
+  color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Indie Flower';
+  margin-top: 200px;
+  font-size: 70px;
+}
+
+#button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  margin-bottom: 160px;
+}
+
+button {
+   
+  -webkit-border-radius: 5px;
+  font-family: 'Chewy';
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background: rgba(89, 0, 255, 0.8);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 20px rgba(89, 0, 255, 0.8);
+  animation: fadeIn 2s 1s forwards;
+  margin-top: 20px;
+  width: 170px;
+  margin: 20px;
+}
+
+button:hover {
+  background: #2500cc;
+  box-shadow: 0 0 30px #2500cc;
+}
+
+.lost {
+  letter-spacing: 2px;
+  color: white;
+  margin: 100px auto;
+  align-items: center;
+  width: 100%;
+  font-size: 100px;
+  font-family: "Permanent Marker";
+  animation: bloody 4s ease infinite alternate;
+  -webkit-animation: bloody 4s ease infinite alternate;
+  -moz-animation: bloody 4s ease infinite alternate;
+  -o-animation: bloody 4s ease infinite alternate;
+  color: white;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin: auto;
+}
+
+@keyframes bloody {
+  0% {
+    text-shadow: 0px 1px 3px #2a4dc2;
+    letter-spacing: -0.025em;
+  }
+
+  100% {
+    text-shadow: 0px 5px 3px #2a4dc2, 0px 10px 3px #2a4dc2, 0px 15px 3px #2a4dc2,
+      0px 20px 3px #2a4dc2, 0px 25px 3px #2a4dc2, 0px 30px 3px #2a4dc2,
+      0px 35px 3px #2a4dc2, 0px 40px 3px #2a4dc2, 0px 45px 3px #2a4dc2,
+  }
+}
+
+.note {
+  color: #2a4dc2;
+  font-size: 80px;
+  margin:  auto;
+  font-family: "Permanent Marker";
+  animation: grow 5s ease infinite alternate;
+  -webkit-animation: grow 5s ease infinite alternate;
+  -moz-animation: grow 5s ease infinite alternate;
+  -o-animation: grow 5s ease infinite alternate;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  100% {
+    transform: scale(1, 1.25);
+  }
+}
+
+.container {
+  position: relative;
+  margin: 25px auto;
+  height: 400px;
+  width: 350px;
+}
+
+.blooddrop {
+  position: relative;
+  width: 11px;
+  height: 11px;
+  top: 0px;
+  margin: 0;
+  background-color: #2a4dc2;
+  border-radius: 50%;
+  animation: drip 3s cubic-bezier(1, 0, .91, .19) infinite;
+  -webkit-animation: drip 3s cubic-bezier(1, 0, .91, .19) infinite;
+  -moz-animation: drip 3s cubic-bezier(1, 0, .91, .19) infinite;
+  -o-animation: drip 3s cubic-bezier(1, 0, .91, .19) infinite;
+}
+
+.blooddrop:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 23px solid #2a4dc2;
+  top: -20px;
+  left: 1px;
+}
+
+.blooddrop:nth-of-type(1) {
+  position: absolute;
+  left: 20px;
+  top: 0px;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+}
+
+.blooddrop:nth-of-type(2) {
+  position: absolute;
+  left: 53px;
+  top: 0px;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+}
+
+.blooddrop:nth-of-type(3) {
+  position: absolute;
+  left: 80px;
+  top: 0px;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+}
+
+.blooddrop:nth-of-type(4) {
+  position: absolute;
+  left: 15px;
+  top: 0px;
+  animation-delay: 5.5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+}
+
+.blooddrop:nth-of-type(5) {
+  position: absolute;
+  left: 130px;
+  top: 0px;
+  animation-delay: 4.5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+}
+
+.blooddrop:nth-of-type(6) {
+  position: absolute;
+  left: 172px;
+  top: 0px;
+  animation-delay: 3.2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+}
+
+.blooddrop:nth-of-type(7) {
+  position: absolute;
+  left: 222px;
+  top: 0px;
+  animation-delay: 4.8s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+}
+
+.blooddrop:nth-of-type(8) {
+  position: absolute;
+  left: 245px;
+  top: 0px;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+}
+
+.blooddrop:nth-of-type(9) {
+  position: absolute;
+  left: 280px;
+  top: 0px;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+}
+
+.blooddrop:nth-of-type(10) {
+  position: absolute;
+  left: 300px;
+  top: 65px;
+  animation-delay: 2.2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+}
+
+@keyframes drip {
+  0% {
+    top: 70px;
+  }
+
+  100% {
+    top: 600px;
+  }
+}
